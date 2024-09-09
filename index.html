@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bada Basket - Fresh Groceries Delivered</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>Important Notice</h3>
+                <p>Please be aware that this website is created solely for demonstration purposes as part of an academic project. It is not a functional e-commerce platform and does not process actual transactions or deliveries.</p>
+            </div>
+            <button class="close-btn" onclick="closePopup()">Understood</button>
+        </div>
+    </div>
+    <div id="source-popup" class="source-popup">
+        <h4>Source Code Available</h4>
+        <p>If you're interested in reviewing the project's implementation, the source code is accessible here:</p>
+        <a href="https://github.com/jonaszamar/BadaBasket-Repo" target="_blank" class="source-link">View Source Code</a>
+    </div>
+    <header>
+        <div class="container">
+            <h1 class="logo">Bada Basket</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products.html">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Fresh Groceries Delivered to Your Doorstep</h2>
+                <a href="index.html" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Product items will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Bada Basket. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
